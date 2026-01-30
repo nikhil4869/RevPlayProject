@@ -8,20 +8,21 @@ import org.slf4j.LoggerFactory;
 
 
 import com.revplay.Dao.AlbumDao;
-import com.revplay.daoImpl.AlbumDaoImpl;
+
 import com.revplay.model.Album;
 
 public class AlbumService {
 
     private static final Logger logger = LoggerFactory.getLogger(AlbumService.class);
 
-    private AlbumDao albumDao=new AlbumDaoImpl();
+    private AlbumDao albumDao;
 
     public AlbumService(AlbumDao albumDao) {
         this.albumDao = albumDao;
     }
 
-    // 🔹 CREATE ALBUM
+
+    //  CREATE ALBUM
     public boolean createAlbum(int artistId, String name, Date releaseDate) {
 
         logger.info("Creating album '{}' for artistId: {}", name, artistId);
@@ -47,7 +48,7 @@ public class AlbumService {
         }
     }
 
-    // 🔹 VIEW ARTIST ALBUMS
+    //  VIEW ARTIST ALBUMS
     public List<Album> viewMyAlbums(int artistId) {
 
         logger.debug("Fetching albums for artistId: {}", artistId);
@@ -60,7 +61,7 @@ public class AlbumService {
         }
     }
 
-    // 🔹 UPDATE ALBUM
+    //  UPDATE ALBUM
     public boolean updateAlbum(int albumId, String name) {
 
         logger.info("Updating albumId: {}", albumId);
@@ -73,7 +74,7 @@ public class AlbumService {
         }
     }
 
-    // 🔹 DELETE ALBUM
+    //  DELETE ALBUM
     public boolean deleteAlbum(int albumId) {
 
         logger.warn("Deleting albumId: {}", albumId);
@@ -86,7 +87,7 @@ public class AlbumService {
         }
     }
 
-    // 🔹 FIND ALBUM ID BY NAME
+    //  FIND ALBUM ID BY NAME
     public int findAlbumIdByName(String name) {
 
         logger.debug("Finding album ID for album name: {}", name);
@@ -98,4 +99,20 @@ public class AlbumService {
             return -1;
         }
     }
+    
+ //  SEARCH ALBUMS BY NAME (for Browse by Album feature)
+    public List<Album> searchAlbumsByName(String name) {
+
+        logger.debug("Searching albums by name: {}", name);
+
+        try {
+            return albumDao.searchAlbumsByName(name);
+        } catch (Exception e) {
+            logger.error("Error searching albums by name: {}", name, e);
+            return null;
+        }
+    }
+    
+
+
 }

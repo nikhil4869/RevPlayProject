@@ -32,10 +32,13 @@ public class RecentlyPlayedDaoImpl implements RecentlyPlayedDao {
         List<Song> list = new ArrayList<Song>();
 
         String sql =
-            "SELECT s.SONG_ID, s.TITLE " +
-            "FROM SONGS s JOIN RECENTLY_PLAYED r ON s.SONG_ID = r.SONG_ID " +
-            "WHERE r.USER_ID=? " +
-            "ORDER BY r.PLAYED_AT DESC FETCH FIRST 5 ROWS ONLY";
+        	    "SELECT * FROM (" +
+        	    " SELECT s.SONG_ID, s.TITLE " +
+        	    " FROM SONGS s JOIN RECENTLY_PLAYED r ON s.SONG_ID = r.SONG_ID " +
+        	    " WHERE r.USER_ID=? " +
+        	    " ORDER BY r.PLAYED_AT DESC" +
+        	    ") WHERE ROWNUM <= 5";
+
 
         try {
         	Connection con = DBConnection.getConnection();
