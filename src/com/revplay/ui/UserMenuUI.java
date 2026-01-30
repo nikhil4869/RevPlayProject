@@ -22,21 +22,21 @@ import java.util.List;
 
 public class UserMenuUI {
 
-    // 🔹 CREATE DAO LAYER
+    //  CREATE DAO LAYER
     private static SongDao songDao=new SongDaoImpl();
     private static PlaylistDao playlistDao=new PlaylistDaoImpl();
     private static FavoriteDao favoriteDao=new FavoriteDaoImpl();
     private static RecentlyPlayedDao recentDao= new RecentlyPlayedDaoImpl();
     private static AlbumDao albumDao= new AlbumDaoImpl();
 
-    // 🔹 CREATE SERVICE LAYER (constructor injection)
+    //  CREATE SERVICE LAYER (constructor injection)
     private static SongService songService = new SongService(songDao);
     private static PlaylistService playlistService = new PlaylistService(playlistDao);
     private static FavoriteService favoriteService = new FavoriteService(favoriteDao);
     private static RecentlyPlayedService recentService = new RecentlyPlayedService(recentDao);
     private static AlbumService albumService = new AlbumService(albumDao);
 
-    // 🔹 PlayerService depends on 2 services
+    //  PlayerService depends on 2 services
     private static PlayerService playerService =
             new PlayerService(songService, recentService);
 
@@ -113,7 +113,7 @@ public class UserMenuUI {
                             break;
                         }
 
-                        // 🔹 Show playlists
+                        //  Show playlists
                         System.out.println("\n--- My Playlists ---");
                         for (Playlist pl : pls) {
                             System.out.println(pl.getPlaylistId() + " - " + pl.getName() 
@@ -153,7 +153,7 @@ public class UserMenuUI {
                             break;
                         }
 
-                        // 🔹 Get songs inside playlist
+                        //  Get songs inside playlist
                         List<Song> songsInPlaylist = playlistService.getSongsInPlaylist(selectedId);
 
                         if (songsInPlaylist == null || songsInPlaylist.isEmpty()) {
@@ -161,7 +161,7 @@ public class UserMenuUI {
                             break;
                         }
 
-                        // 🔹 Show songs
+                        //  Show songs
                         System.out.println("\n--- Songs in Playlist ---");
                         for (Song s : songsInPlaylist) {
                             System.out.println(s.getSongId() + " - " + s.getTitle());
@@ -362,7 +362,7 @@ public class UserMenuUI {
                 case 7:
 
                     try {
-                        // 🔹 Get all songs
+                        //  Get all songs
                         List<Song> allSongsFav = songService.viewAllSongs();
 
                         if (allSongsFav == null || allSongsFav.isEmpty()) {
@@ -370,7 +370,7 @@ public class UserMenuUI {
                             break;
                         }
 
-                        // 🔹 Display songs
+                        //  Display songs
                         System.out.println("\n--- Available Songs ---");
                         for (Song s : allSongsFav) {
                             System.out.println(s.getSongId() + " - " + s.getTitle());
@@ -432,7 +432,7 @@ public class UserMenuUI {
                             break; // 🚫 STOP DB CALL
                         }
 
-                        // 🔹 Safe DB insert
+                        //  Safe DB insert
                         if (favoriteService.add(user.getUserId(), favSongId))
                             System.out.println("Song added to favorites!");
                         else
@@ -448,7 +448,7 @@ public class UserMenuUI {
                 case 8:
 
                     try {
-                        // 🔹 Fetch user's favorite songs
+                        //  Fetch user's favorite songs
                         List<Song> favSongs = favoriteService.getFavorites(user.getUserId());
 
                         // 🔴 No favorites exist
@@ -457,7 +457,7 @@ public class UserMenuUI {
                             break;
                         }
 
-                        // 🔹 Show favorite songs
+                        //  Show favorite songs
                         System.out.println("\n--- Your Favorite Songs ---");
                         for (Song s : favSongs) {
                             System.out.println(s.getSongId() + " - " + s.getTitle());
@@ -502,7 +502,7 @@ public class UserMenuUI {
                             break;
                         }
 
-                        // 🔹 Safe removal
+                        //  Safe removal
                         if (favoriteService.remove(user.getUserId(), removeId))
                             System.out.println("Favorite removed successfully!");
                         else
@@ -790,7 +790,7 @@ public class UserMenuUI {
                             break;
                         }
 
-                        // 🔹 Display Results
+                        //  Display Results
                         System.out.println("\n--- Songs Found ---");
                         for (Song s : result) {
                             System.out.println(s.getSongId() + " - " + s.getTitle());

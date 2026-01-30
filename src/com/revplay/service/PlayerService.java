@@ -20,7 +20,7 @@ public class PlayerService {
         this.recentService = recentService;
     }
 
-    // 🔹 PLAY SONG
+    //  PLAY SONG
     public void playSong(int songId) {
 
         logger.info("User {} started playing songId: {}", currentUserId, songId);
@@ -29,7 +29,7 @@ public class PlayerService {
         isPaused = false;
         currentSongId = songId;
 
-        System.out.println("🎵 Playing Song ID: " + songId);
+        System.out.println(" Playing Song ID: " + songId);
 
         try {
             songService.incrementPlayCount(songId);
@@ -39,7 +39,7 @@ public class PlayerService {
         }
     }
 
-    // 🔹 PAUSE SONG
+    //  PAUSE SONG
     public void pauseSong() {
 
         if (!isPlaying) {
@@ -50,23 +50,23 @@ public class PlayerService {
 
         isPaused = true;
         logger.info("Song paused. songId: {}", currentSongId);
-        System.out.println("⏸ Song Paused.");
+        System.out.println(" Song Paused.");
     }
 
-    // 🔹 RESUME SONG
+    //  RESUME SONG
     public void resumeSong() {
 
         if (isPlaying && isPaused) {
             isPaused = false;
             logger.info("Song resumed. songId: {}", currentSongId);
-            System.out.println("▶ Song Resumed.");
+            System.out.println(" Song Resumed.");
         } else {
             logger.warn("Resume attempted but song not paused");
             System.out.println("Song is not paused.");
         }
     }
 
-    // 🔹 STOP SONG
+    //  STOP SONG
     public void stopSong() {
 
         logger.info("Song stopped. songId: {}", currentSongId);
@@ -75,7 +75,7 @@ public class PlayerService {
         isPaused = false;
         currentSongId = -1;
 
-        System.out.println("⏹ Song Stopped.");
+        System.out.println(" Song Stopped.");
     }
 
     public boolean isPlaying() {

@@ -19,12 +19,12 @@ import java.util.List;
 
 public class ArtistMenu {
 
-	// 🔹 DAO Layer
+	//  DAO Layer
     private static ArtistDao artistDao=new ArtistDaoImpl();
     private static AlbumDao albumDao=new AlbumDaoImpl();
     private static SongDao songDao=new SongDaoImpl();
 
-    // 🔹 Service Layer (constructor injection)
+    //  Service Layer (constructor injection)
     private static ArtistService artistService = new ArtistService(artistDao);
     private static AlbumService albumService = new AlbumService(albumDao);
     private static SongService songService = new SongService(songDao);

@@ -10,10 +10,10 @@ import com.revplay.service.UserService;
 
 public class UserMenu {
 
-    // 🔹 DAO layer
+    //  DAO layer
     private static UserDao userDao=new UserDaoImpl();
 
-    // 🔹 Service layer (constructor injection)
+    //  Service layer (constructor injection)
     private static UserService userService = new UserService(userDao);
 
     public static void register() {
