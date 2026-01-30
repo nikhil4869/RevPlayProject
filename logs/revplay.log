@@ -157,3 +157,31 @@ java.lang.NullPointerException
 2026-01-30 16:09:00 INFO  com.revplay.service.UserService - Login attempt for input: User
 2026-01-30 16:09:00 INFO  com.revplay.service.UserService - Login successful for user: User
 2026-01-30 16:09:06 INFO  com.revplay.service.SongService - Searching genres matching: l
+2026-01-30 18:05:05 INFO  com.revplay.service.UserService - Registration attempt for username: sai, email: sai@gmail.com
+2026-01-30 18:05:06 INFO  com.revplay.service.UserService - User registered successfully: sai
+2026-01-30 18:06:51 INFO  com.revplay.service.UserService - Registration attempt for username: sai kumar, email: saikumar@gmail.com
+2026-01-30 18:06:51 INFO  com.revplay.service.UserService - User registered successfully: sai kumar
+2026-01-30 18:08:06 INFO  com.revplay.service.UserService - Login attempt for input: User
+2026-01-30 18:08:06 INFO  com.revplay.service.UserService - Login successful for user: User
+2026-01-30 18:10:15 INFO  com.revplay.service.SongService - Searching genres matching: s
+2026-01-30 18:10:21 INFO  com.revplay.service.SongService - Browsing songs by genre: Sad
+2026-01-30 18:10:53 INFO  com.revplay.service.SongService - Searching genres matching: o
+2026-01-30 18:10:56 INFO  com.revplay.service.SongService - Browsing songs by genre: Love
+2026-01-30 18:11:03 INFO  com.revplay.service.ArtistService - Searching artists matching: i
+2026-01-30 18:12:13 INFO  com.revplay.service.UserService - Login attempt for input: User
+2026-01-30 18:12:13 INFO  com.revplay.service.UserService - Login successful for user: User
+2026-01-30 18:12:22 INFO  com.revplay.service.ArtistService - Searching artists matching: a
+2026-01-30 18:12:34 INFO  com.revplay.service.ArtistService - Searching artists matching: i
+2026-01-30 18:13:56 INFO  com.revplay.service.SongService - Searching songs by title: 2
+2026-01-30 18:14:02 INFO  com.revplay.service.SongService - Searching songs by title: i
+2026-01-30 18:14:17 INFO  com.revplay.service.SongService - Searching songs by title: I
+2026-01-30 18:15:11 INFO  com.revplay.service.UserService - Login attempt for input: nikhil
+2026-01-30 18:15:11 INFO  com.revplay.service.UserService - Login successful for user: nikhil
+2026-01-30 18:16:42 INFO  com.revplay.service.UserService - Login attempt for input: nikhil
+2026-01-30 18:16:42 INFO  com.revplay.service.UserService - Login successful for user: nikhil
+2026-01-30 18:18:40 INFO  com.revplay.service.UserService - Registration attempt for username: 21, email: c123@gmail.com
+2026-01-30 18:18:40 INFO  com.revplay.service.UserService - User registered successfully: 21
+2026-01-30 18:19:47 INFO  com.revplay.service.UserService - Registration attempt for username: *, email: *@gmail.com
+2026-01-30 18:19:47 INFO  com.revplay.service.UserService - User registered successfully: *
+2026-01-30 21:52:18 INFO  com.revplay.service.UserService - Login attempt for input: User
+2026-01-30 21:52:19 INFO  com.revplay.service.UserService - Login successful for user: User
