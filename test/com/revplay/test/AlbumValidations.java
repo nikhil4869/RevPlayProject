@@ -14,7 +14,7 @@ import com.revplay.Dao.AlbumDao;
 import com.revplay.model.Album;
 import com.revplay.service.AlbumService;
 
-public class AlbumServiceTest {
+public class AlbumValidations {
 
     @Mock
     private AlbumDao albumDao;

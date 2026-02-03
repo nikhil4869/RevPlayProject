@@ -185,3 +185,82 @@ java.lang.NullPointerException
 2026-01-30 18:19:47 INFO  com.revplay.service.UserService - User registered successfully: *
 2026-01-30 21:52:18 INFO  com.revplay.service.UserService - Login attempt for input: User
 2026-01-30 21:52:19 INFO  com.revplay.service.UserService - Login successful for user: User
+2026-01-31 09:11:27 INFO  com.revplay.service.UserService - Login attempt for input: User
+2026-01-31 09:11:27 INFO  com.revplay.service.UserService - Login successful for user: User
+2026-01-31 09:12:46 INFO  com.revplay.service.UserService - Login attempt for input: chintu
+2026-01-31 09:12:46 INFO  com.revplay.service.UserService - Login successful for user: chintu
+2026-01-31 09:14:00 INFO  com.revplay.service.PlaylistService - Creating playlist 'Om Namovenkateshaya' for userId: 3
+2026-01-31 09:14:00 INFO  com.revplay.service.PlaylistService - Playlist created successfully: Om Namovenkateshaya
+2026-01-31 09:14:32 INFO  com.revplay.service.UserService - Login attempt for input: User
+2026-01-31 09:14:32 INFO  com.revplay.service.UserService - Login successful for user: User
+2026-01-31 09:15:11 WARN  com.revplay.service.PlaylistService - Deleting playlistId: 9
+2026-01-31 09:16:06 INFO  com.revplay.service.PlaylistService - Creating playlist 'Dear comrade' for userId: 2
+2026-01-31 09:16:06 INFO  com.revplay.service.PlaylistService - Playlist created successfully: Dear comrade
+2026-01-31 09:16:17 INFO  com.revplay.service.PlaylistService - Adding songId: 8 to playlistId: 11
+2026-01-31 09:17:47 INFO  com.revplay.service.UserService - Login attempt for input: User
+2026-01-31 09:17:47 INFO  com.revplay.service.UserService - Login successful for user: User
+2026-01-31 09:17:57 INFO  com.revplay.service.PlaylistService - Adding songId: 9 to playlistId: 11
+2026-01-31 09:18:09 INFO  com.revplay.service.PlaylistService - Adding songId: 12 to playlistId: 11
+2026-01-31 09:22:37 INFO  com.revplay.service.UserService - Login attempt for input: nikhil
+2026-01-31 09:22:37 INFO  com.revplay.service.UserService - Login successful for user: nikhil
+2026-01-31 09:25:24 INFO  com.revplay.service.UserService - Login attempt for input: User
+2026-01-31 09:25:24 INFO  com.revplay.service.UserService - Login successful for user: User
+2026-01-31 09:49:26 INFO  com.revplay.service.UserService - Login attempt for input: User
+2026-01-31 09:49:26 INFO  com.revplay.service.UserService - Login successful for user: User
+2026-01-31 11:34:45 INFO  com.revplay.service.UserService - Registration attempt for username: nikhil, email: nikhil@gmail.com
+2026-01-31 11:34:45 WARN  com.revplay.service.UserService - Registration failed for user: nikhil
+2026-01-31 11:44:28 INFO  com.revplay.service.UserService - Registration attempt for username: nikhil, email: nikhil@gmail.com
+2026-01-31 11:44:29 WARN  com.revplay.service.UserService - Registration failed for user: nikhil
+2026-01-31 11:45:42 INFO  com.revplay.service.UserService - Registration attempt for username: nikhil123, email: nikhil@gmail.com
+2026-01-31 11:45:42 WARN  com.revplay.service.UserService - Registration failed for user: nikhil123
+2026-01-31 11:48:09 INFO  com.revplay.service.UserService - Registration attempt for username: nikhil123, email: nikhil@gmail.com
+2026-01-31 11:48:09 WARN  com.revplay.service.UserService - Registration failed for user: nikhil123
+2026-02-03 11:15:09 INFO  com.revplay.service.AlbumService - Creating album 'Hits' for artistId: 1
+2026-02-03 11:15:09 INFO  com.revplay.service.AlbumService - Album created successfully: Hits
+2026-02-03 11:15:09 WARN  com.revplay.service.AlbumService - Deleting albumId: 5
+2026-02-03 11:15:09 INFO  com.revplay.service.AlbumService - Updating albumId: 5
+2026-02-03 11:17:37 INFO  com.revplay.service.PlaylistService - Creating playlist 'MyHits' for userId: 1
+2026-02-03 11:17:37 INFO  com.revplay.service.PlaylistService - Playlist created successfully: MyHits
+2026-02-03 11:17:37 WARN  com.revplay.service.PlaylistService - Deleting playlistId: 5
+2026-02-03 11:17:37 WARN  com.revplay.service.PlaylistService - Removing songId: 20 from playlistId: 10
+2026-02-03 11:17:37 INFO  com.revplay.service.PlaylistService - Updating playlistId: 5
+2026-02-03 11:17:37 INFO  com.revplay.service.PlaylistService - Adding songId: 20 to playlistId: 10
+2026-02-03 11:17:37 INFO  com.revplay.service.ArtistService - Updating artist profile for userId: 1
+2026-02-03 11:17:37 INFO  com.revplay.service.ArtistService - Artist profile creation attempt for userId: 1
+2026-02-03 11:17:37 INFO  com.revplay.service.ArtistService - Artist profile created successfully for userId: 1
+2026-02-03 11:17:37 INFO  com.revplay.service.ArtistService - Artist profile creation attempt for userId: 1
+2026-02-03 11:17:37 WARN  com.revplay.service.ArtistService - Artist profile already exists for userId: 1
+2026-02-03 11:17:37 INFO  com.revplay.service.FavoriteService - User 1 adding songId 10 to favorites
+2026-02-03 11:17:37 WARN  com.revplay.service.FavoriteService - User 1 removing songId 10 from favorites
+2026-02-03 11:17:37 INFO  com.revplay.service.AlbumService - Creating album 'Hits' for artistId: 1
+2026-02-03 11:17:37 INFO  com.revplay.service.AlbumService - Album created successfully: Hits
+2026-02-03 11:17:37 INFO  com.revplay.service.AlbumService - Updating albumId: 5
+2026-02-03 11:17:37 WARN  com.revplay.service.AlbumService - Deleting albumId: 5
+2026-02-03 11:17:37 INFO  com.revplay.service.RecentlyPlayedService - Adding songId: 101 to recently played for userId: 1
+2026-02-03 11:17:37 INFO  com.revplay.service.UserService - Password reset attempt for email: mail@test.com
+2026-02-03 11:17:37 INFO  com.revplay.service.UserService - Password reset successful for email: mail@test.com
+2026-02-03 11:17:37 INFO  com.revplay.service.UserService - Login attempt for input: nikhil
+2026-02-03 11:17:37 INFO  com.revplay.service.UserService - Login successful for user: nikhil
+2026-02-03 11:17:37 INFO  com.revplay.service.UserService - Verifying user: nikhil with email: mail@test.com
+2026-02-03 11:17:37 INFO  com.revplay.service.UserService - Registration attempt for username: nikhil, email: nikhil@mail.com
+2026-02-03 11:17:37 INFO  com.revplay.service.UserService - User registered successfully: nikhil
+2026-02-03 11:17:37 INFO  com.revplay.service.SongService - Searching songs by title: Love
+2026-02-03 11:17:37 INFO  com.revplay.service.SongService - Incrementing play count for songId: 2
+2026-02-03 11:17:37 INFO  com.revplay.service.SongService - Uploading song: Shape by artistId: 1
+2026-02-03 11:17:37 INFO  com.revplay.service.SongService - Song uploaded successfully: Shape
+2026-02-03 11:17:37 INFO  com.revplay.service.SongService - Browsing songs by genre: Pop
+2026-02-03 11:17:37 INFO  com.revplay.service.SongService - Updating songId: 5
+2026-02-03 11:17:37 INFO  com.revplay.service.SongService - Song updated successfully: 5
+2026-02-03 11:17:37 WARN  com.revplay.service.SongService - Song does not exist: 99
+2026-02-03 11:17:37 WARN  com.revplay.service.SongService - Deleting songId: 5
+2026-02-03 11:17:37 INFO  com.revplay.service.SongService - Song exists: 10
+2026-02-03 11:17:37 INFO  com.revplay.service.PlayerService - User 1 started playing songId: 10
+2026-02-03 11:17:37 INFO  com.revplay.service.PlayerService - Song stopped. songId: 10
+2026-02-03 11:17:37 INFO  com.revplay.service.PlayerService - User 1 started playing songId: 10
+2026-02-03 11:17:37 INFO  com.revplay.service.PlayerService - User 1 started playing songId: 10
+2026-02-03 11:17:37 INFO  com.revplay.service.PlayerService - Song paused. songId: 10
+2026-02-03 11:17:37 INFO  com.revplay.service.PlayerService - Song resumed. songId: 10
+2026-02-03 11:17:37 INFO  com.revplay.service.PlayerService - User 1 started playing songId: 10
+2026-02-03 11:17:37 INFO  com.revplay.service.PlayerService - Song paused. songId: 10
+2026-02-03 11:17:37 INFO  com.revplay.service.PlayerService - Song resumed. songId: 10
+2026-02-03 11:17:37 WARN  com.revplay.service.PlayerService - Pause attempted but no song is playing

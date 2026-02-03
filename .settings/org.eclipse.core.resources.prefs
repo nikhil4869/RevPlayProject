@@ -1,4 +1,4 @@
-#Fri Jan 30 13:02:15 IST 2026
+#Tue Feb 03 11:17:31 IST 2026
 eclipse.preferences.version=1
 encoding//src/com/revplay/daoImpl/PlaylistDaoImpl.java=UTF-8
 encoding//src/com/revplay/daoImpl/RecentlyPlayedDaoImpl.java=UTF-8
@@ -16,4 +16,4 @@ encoding//src/com/revplay/ui/ArtistMenu.java=UTF-8
 encoding//src/com/revplay/ui/UserMenu.java=UTF-8
 encoding//src/com/revplay/ui/UserMenuUI.java=UTF-8
 encoding//src/com/revplay/util/DBConnection.java=UTF-8
-encoding//test/com/revplay/test/UserServiceTest.java=UTF-8
+encoding//test/com/revplay/test/UserValidations.java=UTF-8

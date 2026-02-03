@@ -15,7 +15,7 @@ import com.revplay.model.Playlist;
 import com.revplay.model.Song;
 import com.revplay.service.PlaylistService;
 
-public class PlaylistServiceTest {
+public class PlaylistValidations {
 
     @Mock
     private PlaylistDao dao;

@@ -14,7 +14,7 @@ import com.revplay.Dao.FavoriteDao;
 import com.revplay.model.Song;
 import com.revplay.service.FavoriteService;
 
-public class FavoriteServiceTest {
+public class FavoriteValidations {
 
     @Mock
     private FavoriteDao favoriteDao;

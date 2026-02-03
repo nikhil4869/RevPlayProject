@@ -14,7 +14,7 @@ import com.revplay.Dao.RecentlyPlayedDao;
 import com.revplay.model.Song;
 import com.revplay.service.RecentlyPlayedService;
 
-public class RecentlyPlayedServiceTest {
+public class RecentlyPlayedValidations {
 
     @Mock
     private RecentlyPlayedDao dao;

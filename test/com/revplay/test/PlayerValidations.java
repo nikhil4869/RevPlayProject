@@ -12,7 +12,7 @@ import com.revplay.service.PlayerService;
 import com.revplay.service.RecentlyPlayedService;
 import com.revplay.service.SongService;
 
-public class PlayerServiceTest {
+public class PlayerValidations {
 
     @Mock
     private SongService songService;

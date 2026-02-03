@@ -12,7 +12,7 @@ import com.revplay.Dao.ArtistDao;
 import com.revplay.model.Artist;
 import com.revplay.service.ArtistService;
 
-public class ArtistServiceTest {
+public class ArtistValidations {
 
     @Mock
     private ArtistDao artistDao;

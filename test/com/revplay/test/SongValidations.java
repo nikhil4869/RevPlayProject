@@ -14,7 +14,7 @@ import com.revplay.Dao.SongDao;
 import com.revplay.model.Song;
 import com.revplay.service.SongService;
 
-public class SongServiceTest {
+public class SongValidations {
 
     @Mock
     private SongDao songDao;

@@ -3,10 +3,13 @@ package com.revplay.daoImpl;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 
 import com.revplay.Dao.UserDao;
 import com.revplay.model.User;
 import com.revplay.util.DBConnection;
+
+
 
 public class UserDaoImpl implements UserDao {
 
@@ -24,10 +27,25 @@ public class UserDaoImpl implements UserDao {
             ps.setString(4, user.getRole());
 
             return ps.executeUpdate() > 0;
-        } catch (Exception e) {
+
+        } catch (SQLException e) {
+
+            // ORA-00001 → unique constraint violation
+            if (e.getErrorCode() == 1) {
+                System.out.println("Email already exists. Try logging in instead.");
+                return false;
+            }
+
+            System.out.println("Registration failed due to database error.");
             e.printStackTrace();
+            return false;
+
+        } catch (Exception e) {
+            System.out.println("Registration failed due to system error.");
+            e.printStackTrace();
+            return false;
         }
-        return false;
+
     }
 
     @Override

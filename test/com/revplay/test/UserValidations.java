@@ -12,7 +12,7 @@ import com.revplay.Dao.UserDao;
 import com.revplay.model.User;
 import com.revplay.service.UserService;
 
-public class UserServiceTest {
+public class UserValidations {
 
     @Mock
     private UserDao userDao;
